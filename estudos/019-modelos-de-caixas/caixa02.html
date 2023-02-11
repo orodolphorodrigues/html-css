@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas Simplificadas</title>
+    <style>
+        h1{ /* box-level */
+            height: 200px;
+            width: 200px;
+            border: 10px solid darkslategray;
+            padding: 10px;
+            margin: 10px 10px 10px 10px;
+            outline: 5px dashed rgb(219, 73, 73);
+        }
+        a{ /* inline-level */
+                
+            border: 10px solid rgb(235, 71, 71);
+            padding: 10px 10px 10px 10px;
+        }
+        #central{
+            margin: 50px auto 10px auto;
+            padding: 10px 20px 30px 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos tambem sao exemplos de box-level, mas os <a href="">links sao exemplos de inline-level</a> vamos ver como tudo isso funciona</p>
+    <h1 id="central">Exemplo de caixa box-level centralizada</h1>
+</body>
+</html>

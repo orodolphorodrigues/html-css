@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <!--a ordem dos source define a ordem em que o navegador vai tentar reproduzir, passando para o proximo se o anterior falhar-->
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="Imagem Flexivel">
+
+        <h1>Reproduzindo Audio</h1>
+
+        <p>Reproduzindo audios em HTML5.</p>
+
+        <audio preload="metadata" autoplay controls loop> <!--preload define o que carregar ao acessar a pagina, controls cria o controle de audio na pagina e loop faz o audio ficar em loop, autoplay deveria fazer o site ja iniciar com a musica mas nao esta funcionando-->
+        <!--a ordem dos source define a ordem em que o navegador vai tentar reproduzir, passando para o proximo se o anterior falhar-->
+        <source src="midia/headboy.mp3" type="audio/mpeg"> <!--add audio .mp3-->
+        <source src="midia/headboy.ogg" type="audio/ogg"> <!--add audio .ogg-->
+        <source src="midia/headboy.wav" type="audio/wav"> <!--add audio .wav tentar evitar por ser muito pesado-->
+        <p>Infelizmente seu navegador nao consegue reproduzir audio. Clique <a href="midia/headboy.mp3">aqui</a> para baixar o arquivo MP3</p>
+        </audio>
+
+    </picture>
+</body>
+</html>

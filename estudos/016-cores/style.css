@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    /*height: 100%;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right,#00CCC0,#72F2EB);
+}
+main{
+    background-color: white;
+    border-radius: 10px; /*arredondar bordas*/
+    width: 600px; /*definir tamanho da area*/
+    padding: 10px; /*acolchoamento, sobra de PX ao redor da area*/
+    margin: auto; /*centralizar conteudo automaticamente*/
+    box-shadow: 5px 5px 15px #1b38379f; /*bordas - 1 expansao lado, 2 expansao baixo, 3 espalhar, cor e transparencia*/
+}
+h1{
+    color:#FF4858 ;
+    text-align: center;
+    text-shadow: 1px 1px 2px #381013a6;
+}
+h2{
+    color: #747F7F;
+
+}
+p {
+    text-align: justify;
+}
