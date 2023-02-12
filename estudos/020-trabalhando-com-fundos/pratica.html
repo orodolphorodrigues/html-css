@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticamente Posicionamentos de Fundos</title>
+    <style>
+        
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+ 
+        body > div#cima{
+            padding-top: 100px;
+        }
+        body > div#meio{
+            padding-top: 100px;
+        }
+        
+        div#cima{
+            background-image: url(img/wallpaper005.jpg);
+            height: 200px;
+            width: 1280px;
+            background-position: center top;
+            background-repeat: no-repeat;
+            margin: -20px -10px 0px -8px
+        }
+        div#meio{
+            background-position: center center;
+            background-image: url(img/wallpaper002.jpg);
+            height: 854px;
+            width: 1280px;
+            margin: -50px -10px 0px -8px;
+            background-repeat: no-repeat;
+
+        }
+        div#baixo{
+            background-position: right bottom;
+            background-image: url(img/wallpaper001.jpg);
+            height: 200px;
+            width: 1280px;
+            margin: -72px -10px 0px -8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bloco" id="cima">
+        <h1>HEADER</h1>
+    </div>
+    <div class="bloco" id="meio">
+        <h1>MAIN</h1>
+    </div>
+    <div class="bloco" id="baixo">
+        <h1>FOOTER</h1>
+    </div>
+</body>
+</html>
