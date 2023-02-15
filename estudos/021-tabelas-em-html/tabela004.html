@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitando Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .destaque{
+            background-color: rgb(210, 255, 127);
+        }
+        .cnome{
+            background-color: bisque;
+        }
+        .csexo{
+            background-color: aquamarine
+        }
+        .cidade{
+            background-color: darkgrey;
+        }
+        .cprof{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Destacando linhas e colunas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col" scope="col">Nome</th>
+            <th scope="col" scope="col">Sexo</th>
+            <th scope="col" scope="col">Idade</th>
+            <th scope="col" scope="col">Profissao</th>
+        </tr>
+        <tr>
+            <td>Xitaozinho</td>
+            <td>M</td>
+            <td>56</td>
+            <td>Dublador</td>
+        </tr>
+        <tr class="destaque">
+            <td>Xororo</td>
+            <td>M</td>
+            <td>54</td>
+            <td>Cantor</td>
+        </tr>
+        <tr>
+            <td>Louro Jose</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Papagaio</td>
+        </tr>
+        <tr>
+            <td>Away Nilzer</td>
+            <td>M</td>
+            <td>62</td>
+            <td>Louco</td>
+        </tr>
+        <tr>
+            <td>Jean-Claude Van Damme</td>
+            <td>M</td>
+            <td>55</td>
+            <td>Ator</td>
+        </tr>
+        <tr>
+            <td>Vampeta</td>
+            <td>M</td>
+            <td>52</td>
+            <td>Comentarista</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
