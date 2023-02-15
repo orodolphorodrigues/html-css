@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Tabela Completa</title>
+    <title>Projeto Tabela 2</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -18,6 +18,13 @@
             padding: 10px;
             text-align: left;
         }
+        th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: gray;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -25,13 +32,14 @@
     <table>
         <thead>
             <tr>
-                <td>Grupo</td>
-                <td>Nomes</td>
-                <td colspan="3">Filmes</td>
+                <th scope="col">Grupo</td>
+                <th scope="col">Nomes</td>
+                <th scope="colgroup" colspan="3">Filmes</td>
             </tr>
         </thead>
+        <tbody>
         <tr>
-            <td rowspan="3">MULHERES</td>
+            <th rowspan="3" scope="rowgroup">MULHERES</td>
             <td>Ana Maria Santos</td>
             <td>Alien</td>
             <td>Rambo</td>
@@ -51,7 +59,7 @@
             <td>Big Hero</td>
         </tr>
         <tr>
-            <td rowspan="3">HOMENS</td>
+            <th rowspan="3" scope="rowgroup">HOMENS</td>
             <td>Bruno Mendonca</td>
             <td>Intocaveis</td>
             <td>Amnesia</td>
@@ -70,6 +78,11 @@
             <td>Toy Story</td>
 
         </tr>
+    </tbody>
+    <tfoot>
+        <th colspan="4" scope="row">Total</th>
+        <td>1000</td>
+    </tfoot>
 
     </table>
 </body>
